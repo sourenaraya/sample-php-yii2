@@ -139,6 +139,10 @@ AppAsset::register($this);
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
+    <?= yii\authclient\widgets\AuthChoice::widget([
+        'baseAuthUrl' => ['site/auth'],
+        'popupMode' => false,
+    ]) ?>
 </footer>
 
 <?php $this->endBody() ?>
